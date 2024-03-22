@@ -47,17 +47,16 @@ const Main = () => {
           <div>
             <div className="mt-4">
               <div>
+                <h2>{(weatherForecast.main.temp - 273.15).toFixed(2)}°C</h2>
                 <h3>Today is : {weatherForecast.weather[0].description}</h3>
-                <p>You probably are feeling like: {weatherForecast.main.feels_like}°F</p>
+                <p>You probably are feeling like: {(weatherForecast.main.feels_like - 273.15).toFixed(2)}°C</p>
                 <p>The humidity is: {weatherForecast.main.humidity}%</p>
-                <p>So, the Max temperature will be: {weatherForecast.main.temp_max}°F...</p>
-                <p>...and the Min temperature will be: {weatherForecast.main.temp_min}°F...</p>
+                <p>So, the Max temperature will be: {weatherForecast.main.temp_max}°K...</p>
+                <p>...and the Min temperature will be: {weatherForecast.main.temp_min}°K</p>
               </div>
 
               <div>
-                <img src={()=>{
-                    if({weatherForecast.main.temp_max} >=)
-                }} />
+                <img src={() => {}} />
               </div>
             </div>
           </div>
