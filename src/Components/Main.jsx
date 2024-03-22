@@ -17,6 +17,7 @@ const Main = () => {
       })
       .then((data) => {
         setWeatherForecast(data);
+        console.log(data);
       });
   };
 
