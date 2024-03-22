@@ -54,13 +54,6 @@ const Main = () => {
                 <p>So, the Max temperature will be: {(weatherForecast.main.temp_max - 273.15).toFixed(2)}°C...</p>
                 <p>...and the Min temperature will be: {(weatherForecast.main.temp_min - 273.15).toFixed(2)}°C</p>
               </div>
-
-              <div>
-                {( () =>{
-                    if({weatherForecast.weather[0].description} == "")
-                })}
-
-              </div>
             </div>
           </div>
         ) : null}
