@@ -51,12 +51,15 @@ const Main = () => {
                 <h3>Today is : {weatherForecast.weather[0].description}</h3>
                 <p>You probably are feeling like: {(weatherForecast.main.feels_like - 273.15).toFixed(2)}°C</p>
                 <p>The humidity is: {weatherForecast.main.humidity}%</p>
-                <p>So, the Max temperature will be: {weatherForecast.main.temp_max}°K...</p>
-                <p>...and the Min temperature will be: {weatherForecast.main.temp_min}°K</p>
+                <p>So, the Max temperature will be: {(weatherForecast.main.temp_max - 273.15).toFixed(2)}°C...</p>
+                <p>...and the Min temperature will be: {(weatherForecast.main.temp_min - 273.15).toFixed(2)}°C</p>
               </div>
 
               <div>
-                <img src={() => {}} />
+                {( () =>{
+                    if({weatherForecast.weather[0].description} == "")
+                })}
+
               </div>
             </div>
           </div>
